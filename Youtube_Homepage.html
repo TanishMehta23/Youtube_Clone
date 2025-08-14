@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <script src="api.js"></script>
+    <link rel="shortcut icon" href="https://icon-library.com/images/youtube-video-icon-png/youtube-video-icon-png-29.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="p-20 pt-10 pl-40">
+        <div class="flex gap-40">
+            <div class="flex">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG8mOoMjnCt8ZkqobhyjbBdQ-wlwbPODwJvA&s"
+                    class="w-10">
+                <p class="text-2xl pt-1 pl-1">Youtube</p>
+            </div>
+            <div class="pt-2 flex gap-8">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                    <path
+                        d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z">
+                    </path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24">
+                    <path
+                        d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 10 21 L 10 14 L 14 14 L 14 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z">
+                    </path>
+                </svg>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJyS6PQnprF0eRzFgzLa-aC9aEZJdhTTaTfQ&s"
+                    class="h-5 w-5">
+                <img src="" alt="">
+            </div>
+            <div class="flex items-center border rounded-lg w-60 overflow-hidden">
+                <input type="text" name="search" id="search-text" placeholder="Search"
+                    class="p-1 pl-3 w-full outline-none">
+                <span onclick="getData()" class="px-3 text-gray-500 cursor-pointer hover:text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z" />
+                    </svg>
+                </span>
+            </div>
+
+
+
+            <div class="mt-2 flex gap-8">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Video_camera_icon.svg/768px-Video_camera_icon.svg.png"
+                    class="h-5 w-5" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUF2zhOlM73EXkdur-Tm42s1E7LpzZ_ifBSA&s"
+                    alt="" class="h-5 w-5">
+                <img src="https://cdn-icons-png.flaticon.com/512/3119/3119338.png" alt="" class="h-5 w-5">
+                <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
+                    alt="" class="w-5 h-5">
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="">
+                <div class="w-40">
+                    <div class="flex pb-3 pt-7 gap-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/565/565290.png" class="w-4 h-4" alt="">
+                        <p class="">Library</p>
+                    </div>
+
+                    <div class="flex pb-3 gap-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2961/2961948.png" class="w-4 h-4" alt="">
+                        <p class="">History</p>
+                    </div>
+                    <div class="flex pb-3 gap-2">
+                        <img src="https://static.thenounproject.com/png/1261644-200.png" class="w-5 h-5" alt="">
+                        <p class="">Your Videos</p>
+                    </div>
+                    <div class="flex pb-3 gap-2">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-watch-later-1781603-1513853.png"
+                            class="w-5 h-5" alt="">
+                        <p class="">Watch Later</p>
+                    </div>
+                    <div class="flex pb-3 gap-2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuu4TN5JDsCW-oLOXyCM_tzf9OvzkXNNzxkg&s"
+                            class="w-4 h-4" alt="">
+                        <p class="">Liked Videos</p>
+                    </div>
+                    <div class="flex pb-3 gap-2">
+                        <img src="https://www.citypng.com/public/uploads/preview/down-head-arrow-black-704081694793652dulkqqhpsh.png"
+                            class="w-4 h-4" alt="">
+                        <p class="">Show More</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="pb-3 pt-4 font-bold">SUBSCRIPTIONS</p>
+                    <div class="flex pb-3 gap-1">
+                        <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
+                            alt="" class="w-5 h-5">
+                        <p class="pb-3">Marwain Pablo</p>
+                    </div>
+                    <div class="flex pb-3 gap-1">
+                        <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
+                            alt="" class="w-5 h-5">
+                        <p class="pb-3">Rohit Sharma</p>
+                    </div>
+                    <div class="flex pb-3 gap-1">
+                        <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
+                            alt="" class="w-5 h-5">
+                        <p class="pb-3">Virat Kohli</p>
+                    </div>
+                    <div class="flex pb-3 gap-1">
+                        <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
+                            alt="" class="w-5 h-5">
+                        <p class="pb-3">Cristiano Ronaldo</p>
+                    </div>
+                    <div class="flex pb-3 gap-2">
+                        <img src="https://www.citypng.com/public/uploads/preview/down-head-arrow-black-704081694793652dulkqqhpsh.png"
+                            class="w-4 h-4" alt="">
+                        <p class="">Show 20 More</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="pb-3 pt-4 font-bold">MORE FROM YOUTUBE</p>
+                    <div class="flex pb-3 gap-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/YouTube_dark_icon_%282017%29.svg/800px-YouTube_dark_icon_%282017%29.svg.png"
+                            class="w-4 h-4" alt="">
+                        <p class="">Youtube Premium</p>
+                    </div>
+                    <div class="flex pb-3 gap-2">
+                        <img src="https://img.icons8.com/m_rounded/200/youtube-live.png" class="w-4 h-4" alt="">
+                        <p class="">Live</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex gap-5 pl-20 pt-6">
+                    <button
+                        class="border w-20 h-10 p-1 rounded-xl hover:bg-black hover:text-white bg-gray-50">All</button>
+                    <button
+                        class="border w-60 h-10 p-1 rounded-xl hover:bg-black hover:text-white bg-gray-50">Stronghold
+                        Kingdoms</button>
+                    <button
+                        class="border w-20 h-10 p-1 rounded-xl hover:bg-black hover:text-white bg-gray-50">Beats</button>
+                    <button
+                        class="border w-20 h-10 p-1 rounded-xl hover:bg-black hover:text-white bg-gray-50">Rapping</button>
+                    <button
+                        class="border w-20 h-10 p-1 rounded-xl hover:bg-black hover:text-white bg-gray-50">Intern</button>
+                    <button
+                        class="border w-20 h-10 p-1 rounded-xl hover:bg-black hover:text-white bg-gray-50">Javascript</button>
+                    <button
+                        class="border w-20 h-10 p-1 rounded-xl hover:bg-black hover:text-white bg-gray-50">Live</button>
+                    <button
+                        class="border w-20 h-10 p-1 rounded-xl hover:bg-black hover:text-white bg-gray-50">Football</button>
+                </div>
+
+                <div>
+                    <img src="https://i.pinimg.com/736x/52/52/f1/5252f1ed77671263b443c28bfcd5a339.jpg"
+                        class="ml-20 mt-5 w-[92%] h-40 rounded-2xl">
+                </div>
+
+                <div id="videos-div" class="grid grid-cols-4 ml-20 mt-10"></div>
+
+                <!-- <div class="ml-20 mt-10 grid grid-cols-4 gap-4">
+                    <div class="hover:bg-gray-200 p-2 hover:rounded-xl hover:cursor-pointer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSNxKtKHY48YjuwtE_9xoAr2J8vMDbXJVFA&s"
+                            class="rounded-3xl h-40">
+                        <div class="flex pt-2 gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png"
+                                class="w-6 h-6 rounded-full">
+                            <p class="font-bold">Google Arcade 2025</p>
+                        </div>
+                        <p class="text-gray-600 pl-8">Google</p>
+                        <div class="text-gray-600 pl-8 flex gap-1">
+                            <p>23M Views</p>
+                            <p>.</p>
+                            <p>1 week ago</p>
+                        </div>
+                    </div>
+                    <div class="hover:bg-gray-200 p-2 hover:rounded-xl hover:cursor-pointer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSNxKtKHY48YjuwtE_9xoAr2J8vMDbXJVFA&s"
+                            class="rounded-3xl h-40">
+                        <div class="flex pt-2 gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png"
+                                class="w-6 h-6 rounded-full">
+                            <p class="font-bold">Google Arcade 2025</p>
+                        </div>
+                        <p class="text-gray-600 pl-8">Google</p>
+                        <div class="text-gray-600 pl-8 flex gap-1">
+                            <p>23M Views</p>
+                            <p>.</p>
+                            <p>1 week ago</p>
+                        </div>
+                    </div>
+                    <div class="hover:bg-gray-200 p-2 hover:rounded-xl hover:cursor-pointer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSNxKtKHY48YjuwtE_9xoAr2J8vMDbXJVFA&s"
+                            class="rounded-3xl h-40">
+                        <div class="flex pt-2 gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png"
+                                class="w-6 h-6 rounded-full">
+                            <p class="font-bold">Google Arcade 2025</p>
+                        </div>
+                        <p class="text-gray-600 pl-8">Google</p>
+                        <div class="text-gray-600 pl-8 flex gap-1">
+                            <p>23M Views</p>
+                            <p>.</p>
+                            <p>1 week ago</p>
+                        </div>
+                    </div>
+                    <div class="hover:bg-gray-200 p-2 hover:rounded-xl hover:cursor-pointer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSNxKtKHY48YjuwtE_9xoAr2J8vMDbXJVFA&s"
+                            class="rounded-3xl h-40">
+                        <div class="flex pt-2 gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png"
+                                class="w-6 h-6 rounded-full">
+                            <p class="font-bold">Google Arcade 2025</p>
+                        </div>
+                        <p class="text-gray-600 pl-8">Google</p>
+                        <div class="text-gray-600 pl-8 flex gap-1">
+                            <p>23M Views</p>
+                            <p>.</p>
+                            <p>1 week ago</p>
+                        </div>
+                    </div>
+                    <div class="hover:bg-gray-200 p-2 hover:rounded-xl hover:cursor-pointer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSNxKtKHY48YjuwtE_9xoAr2J8vMDbXJVFA&s"
+                            class="rounded-3xl h-40">
+                        <div class="flex pt-2 gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png"
+                                class="w-6 h-6 rounded-full">
+                            <p class="font-bold">Google Arcade 2025</p>
+                        </div>
+                        <p class="text-gray-600 pl-8">Google</p>
+                        <div class="text-gray-600 pl-8 flex gap-1">
+                            <p>23M Views</p>
+                            <p>.</p>
+                            <p>1 week ago</p>
+                        </div>
+                    </div>
+                    <div class="hover:bg-gray-200 p-2 hover:rounded-xl hover:cursor-pointer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSNxKtKHY48YjuwtE_9xoAr2J8vMDbXJVFA&s"
+                            class="rounded-3xl h-40">
+                        <div class="flex pt-2 gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png"
+                                class="w-6 h-6 rounded-full">
+                            <p class="font-bold">Google Arcade 2025</p>
+                        </div>
+                        <p class="text-gray-600 pl-8">Google</p>
+                        <div class="text-gray-600 pl-8 flex gap-1">
+                            <p>23M Views</p>
+                            <p>.</p>
+                            <p>1 week ago</p>
+                        </div>
+                    </div>
+                    <div class="hover:bg-gray-200 p-2 hover:rounded-xl hover:cursor-pointer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSNxKtKHY48YjuwtE_9xoAr2J8vMDbXJVFA&s"
+                            class="rounded-3xl h-40">
+                        <div class="flex pt-2 gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png"
+                                class="w-6 h-6 rounded-full">
+                            <p class="font-bold">Google Arcade 2025</p>
+                        </div>
+                        <p class="text-gray-600 pl-8">Google</p>
+                        <div class="text-gray-600 pl-8 flex gap-1">
+                            <p>23M Views</p>
+                            <p>.</p>
+                            <p>1 week ago</p>
+                        </div>
+                    </div>
+                    <div class="hover:bg-gray-200 p-2 hover:rounded-xl hover:cursor-pointer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSNxKtKHY48YjuwtE_9xoAr2J8vMDbXJVFA&s"
+                            class="rounded-3xl h-40">
+                        <div class="flex pt-2 gap-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1024px-YouTube_full-color_icon_%282017%29.svg.png"
+                                class="w-6 h-6 rounded-full">
+                            <p class="font-bold">Google Arcade 2025</p>
+                        </div>
+                        <p class="text-gray-600 pl-8">Google</p>
+                        <div class="text-gray-600 pl-8 flex gap-1">
+                            <p>23M Views</p>
+                            <p>.</p>
+                            <p>1 week ago</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
