@@ -36,4 +36,4 @@ August 2025
 
 👨‍💻 Author
 Tanish Mehta
-B.Tech CSE, Chitkara University
+B.E CSE, Chitkara University
